@@ -11,7 +11,10 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
+          require("astronvim.utils.buffer").close(
+            bufnr)
+        end)
       end,
       desc = "Pick to close",
     },
@@ -20,6 +23,12 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- move.nvim
+    ['<A-j>'] = { ':.move +1<CR>', desc = "Move current line down" },
+    ['<A-k>'] = { ':.move -2<CR>', desc = "Move current line up" },
+    ['<C-A-j>'] = { ':t +0<CR>', desc = "Copy current line down" },
+    ['<C-A-k>'] = { ':t -1<CR>', desc = "Copy current line up" },
   },
   t = {
     -- setting a mapping to false will disable it
