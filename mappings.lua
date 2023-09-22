@@ -37,6 +37,11 @@ return {
     ['<A-k>'] = { ':move .-2<CR>', desc = "Move current line up" },
     ['<C-A-k>'] = { ':t .-1<CR>', desc = "Copy current line up" },
     ['<C-A-j>'] = { ':t .+0<CR>', desc = "Copy current line down" },
+
+    ['<A-l>'] = { 'guee', desc = "Lowercase word right" },
+    ['<A-h>'] = { 'gub', desc = "Lowercase word left" },
+    ['<C-A-l>'] = { 'gUee', desc = "Uppercase word right" },
+    ['<C-A-h>'] = { 'gUb', desc = "Uppercase word left" },
   },
   t = {
     -- setting a mapping to false will disable it
