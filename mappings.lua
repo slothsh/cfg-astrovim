@@ -42,6 +42,9 @@ return {
     ['<A-h>'] = { 'gub', desc = "Lowercase word left" },
     ['<C-A-l>'] = { 'gUee', desc = "Uppercase word right" },
     ['<C-A-h>'] = { 'gUb', desc = "Uppercase word left" },
+
+    -- Neorg
+    ['<leader>gn'] = { ':Neorg workspace notes<CR>', desc = "Go to Neorg notes workspace" },
   },
   t = {
     -- setting a mapping to false will disable it
