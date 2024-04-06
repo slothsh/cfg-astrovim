@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.everforest", enabled = true },
   { import = "astrocommunity.colorscheme.iceberg-vim", enabled = true },
+  { import = "astrocommunity.colorscheme.monokai-pro-nvim", enabled = true },
   { import = "astrocommunity.note-taking.obsidian-nvim", enabled = true },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
